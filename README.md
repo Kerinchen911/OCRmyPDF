@@ -30,15 +30,15 @@ ocrmypdf                      # it's a scriptable command line program  脚本�
 Main features
 -------------
 
-- Generates a searchable [PDF/A](https://en.wikipedia.org/?title=PDF/A) file from a regular PDF
-- Places OCR text accurately below the image to ease copy / paste
-- Keeps the exact resolution of the original embedded images
+- Generates a searchable [PDF/A](https://en.wikipedia.org/?title=PDF/A) file from a regular PDF 可搜索
+- Places OCR text accurately below the image to ease copy / paste 可复制粘贴
+- Keeps the exact resolution of the original embedded images 原始嵌入式图片精准识别
 - When possible, inserts OCR information as a "lossless" operation without disrupting any other content
-- Optimizes PDF images, often producing files smaller than the input file
+- Optimizes PDF images, often producing files smaller than the input file 初始化PDF图片，使文件更小
 - If requested deskews and/or cleans the image before performing OCR
 - Validates input and output files
-- Distributes work across all available CPU cores
-- Uses [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) engine
+- Distributes work across all available CPU cores 全核工作
+- Uses [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) engine 使用TesseractOCR引擎
 - Supports more than [100 languages](https://github.com/tesseract-ocr/tessdata) recognized by Tesseract
 - Battle-tested on thousands of PDFs, a test suite and continuous integration
 
@@ -105,7 +105,7 @@ Documentation and support
 Once ocrmypdf is installed, the built-in help which explains the command syntax and options can be accessed via:
 
 ```bash
-ocrmypdf --help
+ocrmypdf --help 提供了帮助
 ```
 
 Our [documentation is served on Read the Docs](https://ocrmypdf.readthedocs.io/en/latest/index.html).
@@ -113,7 +113,7 @@ Our [documentation is served on Read the Docs](https://ocrmypdf.readthedocs.io/e
 If you detect an issue, please:
 
 - Check whether your issue is already known
-- If no problem report exists on github, please create one here: <https://github.com/jbarlow83/OCRmyPDF/issues>
+- If no problem report exists on github, please create one here: <https://github.com/jbarlow83/OCRmyPDF/issues> 在此处上传问题
 - Describe your problem thoroughly
 - Append the console output of the script when running the debug mode (`-v 1` option)
 - If possible provide your input PDF file as well as the content of the temporary folder (using a file sharing service like Dropbox)
