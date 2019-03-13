@@ -11,7 +11,7 @@ OCRmyPDF
 
 [docs]: https://readthedocs.org/projects/ocrmypdf/badge/?version=latest "RTD"
 
-OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched or copy-pasted.
+OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched or copy-pasted.（增加了text层以允许文字被搜索和复制粘贴）
 
 ```bash
 ocrmypdf                      # it's a scriptable command line program
