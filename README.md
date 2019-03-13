@@ -13,14 +13,14 @@ OCRmyPDF
 
 OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched or copy-pasted.（增加了text层以允许文字被搜索和复制粘贴）
 
-```bash
-ocrmypdf                      # it's a scriptable command line program
-   -l eng+fra                 # it supports multiple languages
-   --rotate-pages             # it can fix pages that are misrotated
-   --deskew                   # it can deskew crooked PDFs!
-   --title "My PDF"           # it can change output metadata
-   --jobs 4                   # it uses multiple cores by default
-   --output-type pdfa         # it produces PDF/A by default
+```bash #以下提供ocrpdf命令式使用方法
+ocrmypdf                      # it's a scriptable command line program  脚本命令程序
+   -l eng+fra                 # it supports multiple languages 支持多种语言，这里是英语和法语
+   --rotate-pages             # it can fix pages that are misrotated  支持页面旋转修正
+   --deskew                   # it can deskew crooked PDFs! 抗页面扭曲
+   --title "My PDF"           # it can change output metadata 能修改输出的元数据
+   --jobs 4                   # it uses multiple cores by default 默认多核工作
+   --output-type pdfa         # it produces PDF/A by default  默认产生PDF/A格式
    input_scanned.pdf          # takes PDF input (or images)
    output_searchable.pdf      # produces validated PDF output
 ```
