@@ -64,7 +64,7 @@ Installation
 
 Linux, UNIX, and macOS are supported. Windows is not directly supported but there is a Docker image available that runs on Windows.
 
-Users of Debian 9 or later or Ubuntu 16.10 or later may simply
+Users of Debian 9 or later or Ubuntu 16.10 or later may simply 提供了安装方法，注意系统版本
 
 ```bash
 apt-get install ocrmypdf
@@ -87,7 +87,7 @@ For everyone else, [see our documentation](https://ocrmypdf.readthedocs.io/en/la
 Languages
 ---------
 
-OCRmyPDF uses Tesseract for OCR, and relies on its language packs. For Linux users, you can often find packages that provide language packs:
+OCRmyPDF uses Tesseract for OCR, and relies on its language packs. For Linux users, you can often find packages that provide language packs:  使用Tesseract引擎，依赖人家的语言包
 
 ```bash
 # Display a list of all Tesseract language packs
@@ -121,7 +121,7 @@ If you detect an issue, please:
 Requirements
 ------------
 
-Runs on CPython 3.5, 3.6 and 3.7. Requires external program installations of Ghostscript, Tesseract OCR, QPDF, and Leptonica. ocrmypdf is pure Python, but uses CFFI to portably generate library bindings.
+Runs on CPython 3.5, 3.6 and 3.7. Requires external program installations of Ghostscript, Tesseract OCR, QPDF, and Leptonica. ocrmypdf is pure Python, but uses CFFI to portably generate library bindings.  对python版本有要求，也需要安装额外的程序依赖
 
 Press & Media
 -------------
