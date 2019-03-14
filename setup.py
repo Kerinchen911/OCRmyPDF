@@ -2,7 +2,7 @@
 #!/usr/bin/env python这种用法是为了防止操作系统用户没有将python装在默认的/usr/bin路径里。
 #当系统看到这一行的时候，首先会到env设置里查找python的安装路径，再调用对应路径下的解释器程序完成操作。
 #比
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-  识别中文编码
 # © 2015 James R. Barlow: github.com/jbarlow83
 #
 # This file is part of OCRmyPDF.
@@ -21,6 +21,10 @@
 # along with OCRmyPDF.  If not, see <http://www.gnu.org/licenses/>.
 
 from __future__ import print_function, unicode_literals
+#Python提供了__future__模块，把下一个新版本的特性导入到当前版本
+#可以在当前版本中测试一些新版本的特性
+#在2.7版本的代码中，可以通过unicode_literals来使用Python 3.x的新的语法
+
 
 import sys
 
@@ -28,15 +32,15 @@ if sys.version_info < (3, 6):
     print("Python 3.6 or newer is required", file=sys.stderr)
     sys.exit(1)
 
-from setuptools import setup, find_packages
-from subprocess import STDOUT, check_output, CalledProcessError
-from collections.abc import Mapping
-import re
+from setuptools import setup, find_packages   #setuptools 安装工具模块
+from subprocess import STDOUT, check_output, CalledProcessError   #subprocess fork一个子进程，并让这个子进程exec另外一个程序相关模块
+from collections.abc import Mapping   #collections模块提供了一些有用的集合类
+import re    #re模块提供正则表达式操作
 
 # pylint: disable=w0613
 
 
-command = next((arg for arg in sys.argv[1:] if not arg.startswith('-')), '')
+command = next((arg for arg in sys.argv[1:] if not arg.startswith('-')), '')   #获得shell命令的输出，调用Linuxshell得到命令结果
 if command.startswith('install') or command in [
     'check',
     'test',
