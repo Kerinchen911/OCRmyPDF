@@ -1,6 +1,6 @@
 # OCRmyPDF
 #
-FROM      ubuntu:18.04
+FROM      ubuntu:18.04  #基础镜像
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   build-essential autoconf automake libtool \
@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   wget
 
 
-ENV LANG=C.UTF-8
+ENV LANG=C.UTF-8   #编码
 
 # Compile and install jbig2
 # Needs libleptonica-dev, zlib1g-dev
