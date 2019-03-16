@@ -23,7 +23,7 @@ to emphasize that SaaS deployments should make sure they comply with
 Ghostscript's license as well as OCRmyPDF's.
 """
 
-from flask import (
+from flask import (      #Flask是Python中一个微型的Web开发框架，依赖着两个外部库： Jinja2 模板引擎以及 Werkzeug WSGI 工具集
     Flask,
     Response,
     flash,
